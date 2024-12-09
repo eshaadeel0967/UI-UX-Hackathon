@@ -1,9 +1,9 @@
 // page.tsx
 import Image from 'next/image';
 import React from 'react';
-import filterIcon from "@public/images/icons/filter.svg";
-import dropdownIcon from "@public/images/icons/dropdown.svg";
-import dropdownUpIcon from "@public/images/icons/dropdown-up.svg";
+import filterIcon from "@/public/images/icons/filter.svg";
+import dropdownIcon from "@/public/images/icons/dropdown.svg";
+import dropdownUpIcon from "@/public/images/icons/dropdown-up.svg";
 import ProductList from '../components/ProductList';
 import Link from 'next/link';
 

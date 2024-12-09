@@ -1,3 +1,4 @@
+
 export const nikeProducts = [
   {
     id: 1,
@@ -6,7 +7,7 @@ export const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 10 795.00",
-    imagesUrls: "/images/products/product-1.png",
+    imagesUrls: "/public/images/products/product-1.png",
   },
   {
     id: 2,
