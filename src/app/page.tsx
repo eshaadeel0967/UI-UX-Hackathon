@@ -43,19 +43,19 @@ export default function Home() {
           <div className="col-span-12 md:col-span-4 m-auto relative">
             <Image src={mensThumbnail} alt="Mens Thumbnail"/>
             <div className="absolute bottom-10 left-8">
-              <button className="bg-white px-6 py-2 rounded-full">Men's</button>
+              <button className="bg-white px-6 py-2 rounded-full">Men&#39;s</button>
             </div>
           </div>
           <div className="col-span-12 md:col-span-4 m-auto relative">
             <Image src={womensThumbnail} alt="Womens Thumbnail"/>
             <div className="absolute bottom-10 left-8">
-              <button className="bg-white px-6 py-2 rounded-full">Women's</button>
+              <button className="bg-white px-6 py-2 rounded-full">Women&#39;s</button>
             </div>
           </div>
           <div className="col-span-12 md:col-span-4 m-auto relative">
             <Image src={kidsThumbnail} alt="Kids Thumbnail"/>
             <div className="absolute bottom-10 left-8">
-              <button className="bg-white px-6 py-2 rounded-full">Kid's</button>
+              <button className="bg-white px-6 py-2 rounded-full">Kid&#39;s</button>
             </div>
           </div>
         </div>
@@ -98,12 +98,12 @@ export default function Home() {
 
               {/* Kids */}
               <div>
-                <h3 className="text-lg font-semibold mb-4">Kids'</h3>
+                <h3 className="text-lg font-semibold mb-4">Kid&#39;s</h3>
                 <ul className="space-y-2">
                   <li><Link href="#" className="text-text-primary-gray">Infant & Toddler Shoes</Link></li>
-                  <li><Link href="#" className="text-text-primary-gray">Kids' Shoes</Link></li>
-                  <li><Link href="#" className="text-text-primary-gray">Kids' Jordan Shoes</Link></li>
-                  <li><Link href="#" className="text-text-primary-gray">Kids' Basketball Shoes</Link></li>
+                  <li><Link href="#" className="text-text-primary-gray">Kid&#39;s Shoes</Link></li>
+                  <li><Link href="#" className="text-text-primary-gray">Kid&#39;s Jordan Shoes</Link></li>
+                  <li><Link href="#" className="text-text-primary-gray">Kid&#39;s Basketball Shoes</Link></li>
                 </ul>
               </div>
             </div>
