@@ -38,7 +38,7 @@ const page = () => {
           </label>
         </div>
       </div>
-      <p className="text-text-secondary-gray text-center pb-6">By creating an account, you agree to Nike's <Link className="underline" href="#">Privacy Policy</Link> and <Link className="underline" href="#">Terms of Use</Link>.</p>
+      <p className="text-text-secondary-gray text-center pb-6">By creating an account, you agree to Nike&#39;s <Link className="underline" href="#">Privacy Policy</Link> and <Link className="underline" href="#">Terms of Use</Link>.</p>
       <Button text="JOIN US" classNames="rounded-sm py-3"/>
       <p className="text-center"> <span className="text-text-secondary-gray">Already a Member? </span><span className="underline">Join Us.</span></p>
     </form>
