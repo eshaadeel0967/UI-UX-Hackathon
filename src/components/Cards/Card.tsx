@@ -30,6 +30,12 @@ const Card: React.FC<Product> = ({
         <p className="text-text-secondary-gray">{color}</p>
       </div>
       <h3 className="font-semibold">{price}</h3>
+       <button
+              onClick={() => addToCart(product)}
+              className="mt-4 w-full py-2 px-4 bg-black text-white rounded-md text-sm font-semibold hover:bg-gray-800"
+            >
+              Add to Cart
+            </button>
     </div>
   );
 };
