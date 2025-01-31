@@ -6,8 +6,8 @@ import dontMissBanner from "@/public/images/dont-miss-banner.jpg";
 import mensThumbnail from "@/public/images/categories-thumbnail/mens-thumbnail.jpg";
 import womensThumbnail from "@/public/images/categories-thumbnail/womens-thumbnail.jpg";
 import kidsThumbnail from "@/public/images/categories-thumbnail/kids-thumbnail.jpg";
-import Button from "./components/Button";
-import BannerSection from "./components/BannerSection";
+import Button from "../components/Button";
+import BannerSection from "../components/BannerSection";
 
 export default function Home() {
   return (

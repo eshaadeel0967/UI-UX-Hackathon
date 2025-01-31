@@ -88,15 +88,16 @@ import p87 from "@/public/images/products/product-87.png";
 import p88 from "@/public/images/products/product-88.png";
 import p89 from "@/public/images/products/product-89.png";
 import p90 from "@/public/images/products/product-90.png";
-const nikeProducts = [
+import { Product } from "./Card";
+const nikeProducts : Product[] = [
   {
     id: 1,
     tags: "Just In",
     title: "Nike Air Force 1 Mid '07",
-    description: "Men's Shoes",
+    description: "Men's Shoes ",
     color: "1 Colour",
     price: "MRP : ₹ 10 795.00",
-    imagesUrls:p1,
+    imageUrl:p1,
   },
   {
     id: 2,
@@ -105,7 +106,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 4 995.00",
-    imagesUrls: p2,
+    imageUrl: p2,
   },
   {
     id: 3,
@@ -114,7 +115,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 8 695.00",
-    imagesUrls: p3,
+    imageUrl: p3,
   },
   {
     id: 4,
@@ -123,7 +124,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 13 295.00",
-    imagesUrls:p4,
+    imageUrl:p4,
   },
   {
     id: 5,
@@ -132,7 +133,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 11 895.00",
-    imagesUrls:p5,
+    imageUrl:p5,
   },
   {
     id: 6,
@@ -141,7 +142,7 @@ const nikeProducts = [
     description: "Women's Basketball Jersey",
     color: "1 Colour",
     price: "MRP : ₹ 2 895.00",
-    imagesUrls: p6,
+    imageUrl: p6,
   },
   {
     id: 7,
@@ -150,7 +151,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 9 695.00",
-    imagesUrls:p7,
+    imageUrl:p7,
   },
   {
     id: 8,
@@ -159,7 +160,7 @@ const nikeProducts = [
     description: "Men's Short Sleeve Graphic Fitness Top",
     color: "1 Colour",
     price: "MRP : ₹ 2 495.00",
-    imagesUrls:p8,
+    imageUrl:p8,
   },
   {
     id: 9,
@@ -168,7 +169,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 5 695.00",
-    imagesUrls:p9,
+    imageUrl:p9,
   },
   {
     id: 10,
@@ -177,7 +178,7 @@ const nikeProducts = [
     description: "Men's Short Sleeve Fitness Top",
     color: "3 Colours",
     price: "MRP : ₹ 2 495.00",
-    imagesUrls:p10,
+    imageUrl:p10,
   },
   {
     id: 11,
@@ -186,7 +187,7 @@ const nikeProducts = [
     description: "Women's Mid-Rise 18cm (approx.) Biker Shorts",
     color: "2 Colours",
     price: "MRP : ₹ 3 395.00",
-    imagesUrls:p11,
+    imageUrl:p11,
   },
   {
     id: 12,
@@ -195,7 +196,7 @@ const nikeProducts = [
     description: "Older Kids' Shoe",
     color: "1 Colour",
     price: "MRP : ₹ 7 495.00",
-    imagesUrls: p12,
+    imageUrl: p12,
   },
   {
     id: 13,
@@ -204,7 +205,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 8 195.00",
-    imagesUrls: p13,
+    imageUrl: p13,
   },
   {
     id: 14,
@@ -213,7 +214,7 @@ const nikeProducts = [
     description: "Women's Shoe",
     color: "2 Colours",
     price: "MRP : ₹ 8 195.00",
-    imagesUrls: p14,
+    imageUrl: p14,
   },
   {
     id: 15,
@@ -222,7 +223,7 @@ const nikeProducts = [
     description: "Men's Tight-Fit Sleeveless Top",
     color: "1 Colour",
     price: "MRP : ₹ 1 495.00",
-    imagesUrls: p15,
+    imageUrl: p15,
   },
   {
     id: 16,
@@ -231,7 +232,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 8 695.00",
-    imagesUrls: p16,
+    imageUrl: p16,
   },
   {
     id: 17,
@@ -240,7 +241,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "2 Colours",
     price: "MRP : ₹ 5 995.00",
-    imagesUrls: p17,
+    imageUrl: p17,
   },
   {
     id: 18,
@@ -249,7 +250,7 @@ const nikeProducts = [
     description: "Men's Short Sleeve Running Top",
     color: "1 Colour",
     price: "MRP : ₹ 1 695.00",
-    imagesUrls: p18,
+    imageUrl: p18,
   },
   {
     id: 19,
@@ -258,7 +259,7 @@ const nikeProducts = [
     description: "Older Kids' Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 6 495.00",
-    imagesUrls: p19,
+    imageUrl: p19,
   },
   {
     id: 20,
@@ -267,7 +268,7 @@ const nikeProducts = [
     description: "Women's Light Support Lightly Lined UNeck Printed Sports Bra",
     color: "1 Colour",
     price: "MRP : ₹ 2 195.00",
-    imagesUrls: p20,
+    imageUrl: p20,
   },
   {
     id: 21,
@@ -276,7 +277,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "2 Colours",
     price: "MRP : ₹ 7 495.00",
-    imagesUrls: p21,
+    imageUrl: p21,
   },
   {
     id: 22,
@@ -285,7 +286,7 @@ const nikeProducts = [
     description: "Women's Medium support Padded Sports Bra Tank",
     color: "2 Colours",
     price: "MRP : ₹ 3 095.00",
-    imagesUrls: p22,
+    imageUrl: p22,
   },
   {
     id: 23,
@@ -294,7 +295,7 @@ const nikeProducts = [
     description: "Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 8 595.00",
-    imagesUrls: p23,
+    imageUrl: p23,
   },
   {
     id: 24,
@@ -303,7 +304,7 @@ const nikeProducts = [
     description: "Men's Running Tank",
     color: "2 Colours",
     price: "MRP : ₹ 3 495.00",
-    imagesUrls: p24,
+    imageUrl: p24,
   },
   {
     id: 25,
@@ -312,7 +313,7 @@ const nikeProducts = [
     description: "Men's 18cm (approx.) 2-in 1 Versatile Shorts",
     color: "1 Colour",
     price: "MRP : ₹ 2 495.00",
-    imagesUrls: p25,
+    imageUrl: p25,
   },
   {
     id: 26,
@@ -321,7 +322,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "2 Colours",
     price: "MRP : ₹ 7 495.00",
-    imagesUrls: p26,
+    imageUrl: p26,
   },
   {
     id: 27,
@@ -330,7 +331,7 @@ const nikeProducts = [
     description: "Older Kids' Oversized Woven Jacket",
     color: "1 Colour",
     price: "MRP : ₹ 3 895.00",
-    imagesUrls: p27,
+    imageUrl: p27,
   },
   {
     id: 28,
@@ -339,7 +340,7 @@ const nikeProducts = [
     description: "Older Kids' (Girls') High waisted Woven Shorts",
     color: "2 Colours",
     price: "MRP : ₹ 2 495.00",
-    imagesUrls: p28,
+    imageUrl: p28,
   },
   {
     id: 29,
@@ -348,7 +349,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 8 595.00",
-    imagesUrls: p29,
+    imageUrl: p29,
   },
   {
     id: 30,
@@ -357,7 +358,7 @@ const nikeProducts = [
     description: "Skate Shoe",
     color: "1 Colour",
     price: "MRP : ₹ 5 995.00",
-    imagesUrls: p30,
+    imageUrl: p30,
   },
   {
     id: 31,
@@ -366,7 +367,7 @@ const nikeProducts = [
     description: "Men's 13cm (approx.) Brief-Lined Running Shorts",
     color: "2 Colours",
     price: "MRP : ₹ 2 495.00",
-    imagesUrls: p31,
+    imageUrl: p31,
   },
   {
     id: 32,
@@ -375,7 +376,7 @@ const nikeProducts = [
     description: "Men's Training Shoes",
     color: "2 Colours",
     price: "MRP : ₹ 4 995.00",
-    imagesUrls: p32,
+    imageUrl: p32,
   },
   {
     id: 33,
@@ -384,7 +385,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 8 595.00",
-    imagesUrls: p33,
+    imageUrl: p33,
   },
   {
     id: 34,
@@ -393,7 +394,7 @@ const nikeProducts = [
     description: "Men's 23cm (approx.) Unlined Shorts",
     color: "2 Colours",
     price: "MRP : ₹ 1 795.00",
-    imagesUrls: p34,
+    imageUrl: p34,
   },
   {
     id: 35,
@@ -402,7 +403,7 @@ const nikeProducts = [
     description: "Women's Full zip Top",
     color: "1 Colour",
     price: "MRP : ₹ 5 495.00",
-    imagesUrls: p35
+    imageUrl: p35
   },
   {
     id: 36,
@@ -411,7 +412,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "2 Colours",
     price: "MRP : ₹ 13 995.00",
-    imagesUrls: p36,
+    imageUrl: p36,
   },
   {
     id: 37,
@@ -420,7 +421,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 8 295.00",
-    imagesUrls: p37,
+    imageUrl: p37,
   },
   {
     id: 38,
@@ -429,7 +430,7 @@ const nikeProducts = [
     description: "Men's Short Sleeve Running Top",
     color: "1 Colour",
     price: "MRP : ₹ 3 895.00",
-    imagesUrls: p38,
+    imageUrl: p38,
   },
   {
     id: 39,
@@ -438,7 +439,7 @@ const nikeProducts = [
     description: "Men's 18cm (approx.) Unlined Versatile Shorts",
     color: "2 Colours",
     price: "MRP : ₹ 2 395.00",
-    imagesUrls: p39,
+    imageUrl: p39,
   },
   {
     id: 40,
@@ -447,7 +448,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 11 495.00",
-    imagesUrls: p40,
+    imageUrl: p40,
   },
   {
     id: 41,
@@ -456,7 +457,7 @@ const nikeProducts = [
     description: "Women's Long-Sleeve Running Top",
     color: "1 Colour",
     price: "MRP : ₹ 5 295.00",
-    imagesUrls: p41,
+    imageUrl: p41,
   },
   {
     id: 42,
@@ -465,7 +466,7 @@ const nikeProducts = [
     description: "Women's High Waisted 7/8 Leggings",
     color: "1 Colour",
     price: "MRP : ₹ 3 795.00",
-    imagesUrls: p42,
+    imageUrl: p42,
   },
   {
     id: 43,
@@ -474,7 +475,7 @@ const nikeProducts = [
     description: "Men's 18cm (approx.) Unlined Shorts",
     color: "3 Colours",
     price: "MRP : ₹ 1 795.00",
-    imagesUrls: p43,
+    imageUrl: p43,
   },
   {
     id: 44,
@@ -483,7 +484,7 @@ const nikeProducts = [
     description: "Women's Short sleeve Golf Polo",
     color: "2 Colours",
     price: "MRP : ₹ 3 695.00",
-    imagesUrls: p44,
+    imageUrl: p44,
   },
   {
     id: 45,
@@ -492,7 +493,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "2 Colours",
     price: "MRP : ₹ 4 995.00",
-    imagesUrls: p45,
+    imageUrl: p45,
   },
   {
     id: 46,
@@ -501,7 +502,7 @@ const nikeProducts = [
     description: "Women's Firm Support High Waisted Leggings with Pockets",
     color: "1 Colour",
     price: "MRP : ₹ 5 795.00",
-    imagesUrls: p46,
+    imageUrl: p46,
   },
   {
     id: 47,
@@ -510,7 +511,7 @@ const nikeProducts = [
     description: "Women's Tennis Tank",
     color: "1 Colour",
     price: "MRP : ₹ 1 995.00",
-    imagesUrls: p47,
+    imageUrl: p47,
   },
   {
     id: 48,
@@ -519,7 +520,7 @@ const nikeProducts = [
     description: "Women's High Support Padded Sports Bra",
     color: "1 Colour",
     price: "MRP : ₹ 3 695.00",
-    imagesUrls: p48,
+    imageUrl: p48,
   },
   {
     id: 49,
@@ -528,7 +529,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 12 295.00",
-    imagesUrls: p49,
+    imageUrl: p49,
   },
   {
     id: 50,
@@ -537,7 +538,7 @@ const nikeProducts = [
     description: "Baby/Toddler Easy On/Off Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 6 995.00",
-    imagesUrls: p50,
+    imageUrl: p50,
   },
   {
     id: 51,
@@ -546,7 +547,7 @@ const nikeProducts = [
     description: "Custom Men's Road Running Shoes",
     color: "6 Colours",
     price: "MRP : ₹ 19 295.00",
-    imagesUrls: p51,
+    imageUrl: p51,
   },
   {
     id: 52,
@@ -555,7 +556,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 15 995.00",
-    imagesUrls: p52,
+    imageUrl: p52,
   },
   {
     id: 53,
@@ -564,7 +565,7 @@ const nikeProducts = [
     description: "Custom Women's Road Running Shoes",
     color: "6 Colours",
     price: "MRP : ₹ 19 295.00",
-    imagesUrls: p53,
+    imageUrl: p53,
   },
   {
     id: 54,
@@ -573,7 +574,7 @@ const nikeProducts = [
     description: "Custom Women's Shoes",
     color: "6 Colours",
     price: "MRP : ₹ 17 295.00",
-    imagesUrls: p54,
+    imageUrl: p54,
   },
   {
     id: 55,
@@ -582,7 +583,7 @@ const nikeProducts = [
     description: "Custom Men's Road Running Shoes",
     color: "5 Colours",
     price: "MRP : ₹ 16 995.00",
-    imagesUrls: p55,
+    imageUrl: p55,
   },
   {
     id: 56,
@@ -591,7 +592,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 12 795.00",
-    imagesUrls: p56,
+    imageUrl: p56,
   },
   {
     id: 57,
@@ -600,7 +601,7 @@ const nikeProducts = [
     description: "Custom Men's Shoes",
     color: "9 Colours",
     price: "MRP : ₹ 13 295.00",
-    imagesUrls:p57,
+    imageUrl:p57,
   },
   {
     id: 58,
@@ -609,7 +610,7 @@ const nikeProducts = [
     description: "Custom Men's Road Running Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 16 995.00",
-    imagesUrls: p58,
+    imageUrl: p58,
   },
   {
     id: 59,
@@ -618,7 +619,7 @@ const nikeProducts = [
     description: "Custom Women's Shoes",
     color: "8 Colours",
     price: "MRP : ₹ 13 295.00",
-    imagesUrls: p59,
+    imageUrl: p59,
   },
   {
     id: 60,
@@ -627,7 +628,7 @@ const nikeProducts = [
     description: "Men's Waterproof Trail running-Sheos",
     color: "1 Colour",
     price: "MRP : ₹ 14 995.00",
-    imagesUrls:p60
+    imageUrl:p60
   },
   {
     id: 61,
@@ -636,7 +637,7 @@ const nikeProducts = [
     description: "Custom Women's Road Running Shoes",
     color: "6 Colours",
     price: "MRP : ₹ 16 995.00",
-    imagesUrls:p61
+    imageUrl:p61
   },
   {
     id: 62,
@@ -645,7 +646,7 @@ const nikeProducts = [
     description: "Women's Trail Running Shoes",
     color: "2 Colours",
     price: "MRP : ₹ 11 895.00",
-    imagesUrls:p62
+    imageUrl:p62
   },
   {
     id: 63,
@@ -654,7 +655,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 12 295.00",
-    imagesUrls:p63
+    imageUrl:p63
   },
   {
     id: 64,
@@ -663,7 +664,7 @@ const nikeProducts = [
     description: "Men's Basketball Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 16 295.00",
-    imagesUrls:p64
+    imageUrl:p64
   },
   {
     id: 65,
@@ -672,7 +673,7 @@ const nikeProducts = [
     description: "Men's Basketball Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 10 795.00",
-    imagesUrls:p65
+    imageUrl:p65
   },
   {
     id: 66,
@@ -681,7 +682,7 @@ const nikeProducts = [
     description: "Firm-Ground Football Boot",
     color: "1 Colour",
     price: "MRP : ₹ 21 995.00",
-    imagesUrls:p66,
+    imageUrl:p66,
   },
   {
     id: 67,
@@ -690,7 +691,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 17 495.00",
-    imagesUrls:p67,
+    imageUrl:p67,
   },
   {
     id: 68,
@@ -699,7 +700,7 @@ const nikeProducts = [
     description: "Men's Trail-Running Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 11 595.00",
-    imagesUrls:p68,
+    imageUrl:p68,
   },
   {
     id: 69,
@@ -708,7 +709,7 @@ const nikeProducts = [
     description: "Younger Kids' Easy On/Off Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 7 995.00",
-    imagesUrls:p69
+    imageUrl:p69
   },
   {
     id: 70,
@@ -717,7 +718,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 12 795.00",
-    imagesUrls:p70,
+    imageUrl:p70,
   },
   {
     id: 71,
@@ -726,7 +727,7 @@ const nikeProducts = [
     description: "Men's Trail-Running Shoes",
     color: "2 Colours",
     price: "MRP : ₹ 13 995.00",
-    imagesUrls:p71,
+    imageUrl:p71,
   },
   {
     id: 72,
@@ -735,7 +736,7 @@ const nikeProducts = [
     description: "Men's Tennis Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 15 995.00",
-    imagesUrls:p72,
+    imageUrl:p72,
   },
   {
     id: 73,
@@ -744,7 +745,7 @@ const nikeProducts = [
     description: "Women's Ribbed Jersey Short Sleeve Top",
     color: "2 Colours",
     price: "MRP : ₹ 3 295.00",
-    imagesUrls:p73,
+    imageUrl:p73,
   },
   {
     id: 74,
@@ -753,7 +754,7 @@ const nikeProducts = [
     description: "Women's High Waisted Ribbed Jersey Trousers",
     color: "1 Colour",
     price: "MRP : ₹ 3 995.00",
-    imagesUrls:p74,
+    imageUrl:p74,
   },
   {
     id: 75,
@@ -762,7 +763,7 @@ const nikeProducts = [
     description: "Women's Jumpsuit",
     color: "1 Colour",
     price: "MRP : ₹ 6 295.00",
-    imagesUrls:p75,
+    imageUrl:p75,
   },
   {
     id: 76,
@@ -771,7 +772,7 @@ const nikeProducts = [
     description: "Women's Woven Jacket",
     color: "1 Colour",
     price: "MRP : ₹ 7 295.00",
-    imagesUrls:p76,
+    imageUrl:p76,
   },
   {
     id: 77,
@@ -780,7 +781,7 @@ const nikeProducts = [
     description: "Older Kids' (Girls') T-Shirt",
     color: "1 Colour",
     price: "MRP : ₹ 1 295.00",
-    imagesUrls:p77,
+    imageUrl:p77,
   },
   {
     id: 78,
@@ -789,7 +790,7 @@ const nikeProducts = [
     description: "Women's High Waisted Ribbed Jersey Shorts",
     color: "1 Colour",
     price: "MRP : ₹ 2 495.00",
-    imagesUrls:p78,
+    imageUrl:p78,
   },
   {
     id: 79,
@@ -798,7 +799,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 7 495.00",
-    imagesUrls:p79,
+    imageUrl:p79,
   },
   {
     id: 80,
@@ -807,7 +808,7 @@ const nikeProducts = [
     description: "Kids' Mini Backpack (11L)",
     color: "2 Colours",
     price: "MRP : ₹ 1 595.00",
-    imagesUrls:p80,
+    imageUrl:p80,
   },
   {
     id: 81,
@@ -816,7 +817,7 @@ const nikeProducts = [
     description: "Women's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 7 995.00",
-    imagesUrls:p81
+    imageUrl:p81
   },
   {
     id: 82,
@@ -825,7 +826,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 13 995.00",
-    imagesUrls:p82
+    imageUrl:p82
   },
   {
     id: 83,
@@ -834,7 +835,7 @@ const nikeProducts = [
     description: "Baby/Toddler Sandals",
     color: "2 Colours",
     price: "MRP : ₹ 2 495.00",
-    imagesUrls:p83
+    imageUrl:p83
   },
   {
     id: 84,
@@ -843,7 +844,7 @@ const nikeProducts = [
     description: "Men's Training Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 4 995.00",
-    imagesUrls:p84
+    imageUrl:p84
   },
   {
     id: 85,
@@ -852,7 +853,7 @@ const nikeProducts = [
     description: "Women's Golf Visor",
     color: "2 Colours",
     price: "MRP : ₹ 1 295.00",
-    imagesUrls:p85
+    imageUrl:p85
   },
   {
     id: 86,
@@ -861,7 +862,7 @@ const nikeProducts = [
     description: "Men's Training Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 8 895.00",
-    imagesUrls:p86,
+    imageUrl:p86,
   },
   {
     id: 87,
@@ -870,7 +871,7 @@ const nikeProducts = [
     description: "Women's Football Shorts",
     color: "1 Colour",
     price: "MRP : ₹ 1 595.00",
-    imagesUrls:p87,
+    imageUrl:p87,
   },
   {
     id: 88,
@@ -879,7 +880,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "1 Colour",
     price: "MRP : ₹ 8 595.00",
-    imagesUrls:p88,
+    imageUrl:p88,
   },
   {
     id: 89,
@@ -888,7 +889,7 @@ const nikeProducts = [
     description: "Older Kids' Woven Football Tracksuit Bottoms (Stock)",
     color: "1 Colour",
     price: "MRP : ₹ 2 195.00",
-    imagesUrls: p89,
+    imageUrl: p89,
   },
   {
     id: 90,
@@ -897,7 +898,7 @@ const nikeProducts = [
     description: "Men's Shoes",
     color: "2 Colours",
     price: "MRP : ₹ 5 695.00",
-    imagesUrls: p90,
+    imageUrl: p90,
   },
 ];
 export default nikeProducts;

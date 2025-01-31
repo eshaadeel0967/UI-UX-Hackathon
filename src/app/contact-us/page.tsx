@@ -8,7 +8,7 @@ import messageIcon from "@/public/images/icons/message.svg";
 import emailIcon from "@/public/images/icons/email.svg";
 import locationIcon from "@/public/images/icons/location.svg";
 import Link from 'next/link';
-import Button from '../components/Button';
+import Button from '../../components/Button';
 
 const page = () => {
   return (

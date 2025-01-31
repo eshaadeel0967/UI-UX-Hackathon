@@ -1,28 +1,30 @@
 // Card.tsx
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
-type Product = {
+export type Product = {
+  id: number;
   tags: string;
   title: string;
   description: string;
   color: string;
-  price: string;
-  imagesUrls: StaticImageData ;
+  price: string | any;
+  imageUrl: StaticImageData;
 };
 
 const Card: React.FC<Product> = ({
+  id,
   tags,
   title,
   description,
   color,
   price,
-  imagesUrls,
+  imageUrl,
 }) => {
   return (
     <div className="mb-6">
-      <Image src={imagesUrls} alt={title} width={300} height={300} />
+      
+      <Image src={imageUrl} alt={title} width={300} height={300} />
       <div className="py-4">
         <h4 className="text-[#9E3500]">{tags}</h4>
         <h2 className="font-semibold">{title}</h2>
@@ -30,12 +32,7 @@ const Card: React.FC<Product> = ({
         <p className="text-text-secondary-gray">{color}</p>
       </div>
       <h3 className="font-semibold">{price}</h3>
-       <button
-              onClick={() => addToCart(product)}
-              className="mt-4 w-full py-2 px-4 bg-black text-white rounded-md text-sm font-semibold hover:bg-gray-800"
-            >
-              Add to Cart
-            </button>
+      
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 
 interface BannerSectionProps {
@@ -22,7 +23,9 @@ const BannerSection: React.FC<BannerSectionProps> = ({heading, imageUrl, secondH
         <p className="w-full md:w-1/2 text-center py-6">
           {para}
         </p>
+        <Link href="/all-products">
         <Button text={buttonText} classNames="rounded-full py-2" />
+        </Link>
       </div>
     </section>
   );

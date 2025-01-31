@@ -4,7 +4,7 @@ import React from 'react';
 import filterIcon from "@/public/images/icons/filter.svg";
 import dropdownIcon from "@/public/images/icons/dropdown.svg";
 import dropdownUpIcon from "@/public/images/icons/dropdown-up.svg";
-import ProductList from '../components/ProductList';
+import ProductList from '../../components/ProductList';
 import Link from 'next/link';
 
 const Page = () => {
