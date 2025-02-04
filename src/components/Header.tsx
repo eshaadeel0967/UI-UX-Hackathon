@@ -82,7 +82,7 @@ const Header = () => {
                 placeholder="Search"
               />
             </div>
-            <Link href="/">
+            <Link href="/favourites">
             <Image src={wishlistIcon} alt="wishlist" />
             </Link>
             <Link href="/cart">
